@@ -25,6 +25,7 @@
       ],
       "settings": {
         "editor.formatOnSave": true,
+        "files.autoSave": "afterDelay",
         "java.format.enabled": true,
         "java.test.config": {
           "workingDirectory": "${workspaceFolder}"
