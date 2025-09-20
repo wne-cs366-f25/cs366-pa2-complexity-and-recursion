@@ -128,7 +128,7 @@ Solve the following recurrences using the Master Theorem.
 
 ### Performance Comparison
 
-After implementing the three binomial coefficient methods, provide your empirical analysis:
+After implementing the three binomial coefficient methods, run the main method (`gradle run`) provide your empirical analysis:
 
 #### Timing Results
 
@@ -162,48 +162,3 @@ Record the execution times for your three methods with different input sizes:
 - **Theoretical complexity:** O(2ⁿ)
 - **Empirical observations:** [Describe what you observed about performance scaling]
 - **Analysis:** [Explain how empirical results match or differ from theory]
-
-#### Implementation Challenges
-
-**What was the most challenging part of each implementation?**
-
-**Method 1:** [Your response]
-
-**Method 2:** [Your response]
-
-**Method 3:** [Your response]
-
-#### Optimization Insights
-
-**Which method would you choose for a production system and why?**
-[Your analysis considering both time complexity and practical factors]
-
-**For what types of inputs might each method be preferred?**
-[Consider different scenarios: small n, large n, small k, large k, etc.]
-
----
-
-## Summary
-
-### Key Learning Outcomes
-
-**Asymptotic Analysis:**
-[Summarize what you learned about proving Big Oh/Omega relationships]
-
-**Recurrence Relations:**  
-[Summarize what you learned about solving recurrences and applying Master Theorem]
-
-**Implementation Experience:**
-[Summarize insights gained from implementing and comparing the three algorithmic approaches]
-
-### Connecting Theory to Practice
-
-**How did empirical results compare to theoretical predictions?**
-[Your reflection on whether real performance matched asymptotic analysis]
-
-**What insights did you gain about algorithm design trade-offs?**
-[Your thoughts on balancing simplicity, efficiency, and maintainability]
-
----
-
-_Analysis completed by [Your Name] for CS366 PA2_
