@@ -34,11 +34,36 @@ public class ComplexityRecursion {
      * @return C(n,k) if valid inputs, -1 otherwise
      */
     public static long binomialDefinition(int n, int k) {
-        // TODO: Implement using direct factorial calculation
         // Validate inputs first
-        // Calculate n!, k!, and (n-k)! using separate loops
+        if (n < 0 || k < 0 || k > n) {
+            return -1;
+        }
+        
+        // Handle base cases
+        if (k == 0 || k == n) {
+            return 1;
+        }
+        
+        // Calculate n! using a loop
+        long nFactorial = 1;
+        for (int i = 1; i <= n; i++) {
+            nFactorial *= i;
+        }
+        
+        // Calculate k! using a loop
+        long kFactorial = 1;
+        for (int i = 1; i <= k; i++) {
+            kFactorial *= i;
+        }
+        
+        // Calculate (n-k)! using a loop
+        long nMinusKFactorial = 1;
+        for (int i = 1; i <= (n - k); i++) {
+            nMinusKFactorial *= i;
+        }
+        
         // Return n! / (k! * (n-k)!)
-        throw new UnsupportedOperationException("TODO: Implement binomialDefinition");
+        return nFactorial / (kFactorial * nMinusKFactorial);
     }
     
     /**
@@ -61,11 +86,29 @@ public class ComplexityRecursion {
      * @return C(n,k) if valid inputs, -1 otherwise
      */
     public static long binomialCancellation(int n, int k) {
-        // TODO: Implement using factor cancellation
         // Validate inputs first
+        if (n < 0 || k < 0 || k > n) {
+            return -1;
+        }
+        
+        // Handle base cases
+        if (k == 0 || k == n) {
+            return 1;
+        }
+        
         // Optimize by choosing smaller of k or (n-k)
-        // Use cancellation to reduce computation
-        throw new UnsupportedOperationException("TODO: Implement binomialCancellation");
+        // This minimizes the number of operations needed
+        if (k > n - k) {
+            k = n - k;
+        }
+        
+        // Use cancellation to compute C(n,k) = (n * (n-1) * ... * (n-k+1)) / (k * (k-1) * ... * 1)
+        long result = 1;
+        for (int i = 0; i < k; i++) {
+            result = result * (n - i) / (i + 1);
+        }
+        
+        return result;
     }
     
     /**
@@ -88,11 +131,18 @@ public class ComplexityRecursion {
      * @return C(n,k) if valid inputs, -1 otherwise
      */
     public static long binomialRecursive(int n, int k) {
-        // TODO: Implement using Pascal's triangle recursion
         // Validate inputs first
+        if (n < 0 || k < 0 || k > n) {
+            return -1;
+        }
+        
         // Handle base cases: C(n,0) = 1 and C(n,n) = 1
+        if (k == 0 || k == n) {
+            return 1;
+        }
+        
         // Recursive case: C(n,k) = C(n-1,k-1) + C(n-1,k)
-        throw new UnsupportedOperationException("TODO: Implement binomialRecursive");
+        return binomialRecursive(n - 1, k - 1) + binomialRecursive(n - 1, k);
     }
     
     /**
