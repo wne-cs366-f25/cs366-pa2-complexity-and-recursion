@@ -217,7 +217,7 @@ Since f(n) = n³ = Ω(n^(log_b a + ε)) for ε = 1.74, and n³ satisfies the reg
 
 ### Performance Comparison
 
-After implementing the three binomial coefficient methods, provide your empirical analysis:
+After implementing the three binomial coefficient methods, run the main method (`gradle run`) provide your empirical analysis:
 
 #### Timing Results
 
