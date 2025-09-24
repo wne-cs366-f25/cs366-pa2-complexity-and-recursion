@@ -4,7 +4,7 @@ This assignment combines theoretical complexity analysis with practical algorith
 
 ## Part A: Asymptotic Analysis
 
-Complete the theoretical problems in `ANALYSIS.md`:
+Complete the theoretical problems in `ANALYSIS.md` or in `ANALYSIS.pdf`:
 
 **Problem 1: Big Oh and Big Omega Proofs**
 
@@ -18,7 +18,7 @@ Complete the theoretical problems in `ANALYSIS.md`:
 
 ## Part B: Recurrence Relations
 
-Complete the recurrence analysis problems in `ANALYSIS.md`:
+Complete the recurrence analysis problems in `ANALYSIS.md` or in `ANALYSIS.pdf`:
 
 **Algorithm Analysis**
 
@@ -98,7 +98,7 @@ The main method includes timing analysis to observe performance differences betw
 
 #### Step 3: Complete Your Analysis
 
-Fill out `ANALYSIS.md` with:
+Fill out `ANALYSIS.md` or in `ANALYSIS.pdf` with:
 
 - Step-by-step mathematical proofs and derivations
 - Recurrence relation solutions with detailed work
