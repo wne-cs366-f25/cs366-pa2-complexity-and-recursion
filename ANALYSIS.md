@@ -14,7 +14,7 @@
 
 ### Problem 2: Function Growth Ordering
 
-Determine the tight bound (Θ notation) for each function, then order them from fastest (1) to slowest (7) asymptotic growth.
+Determine the tight bound (Θ notation) for each function, then order them from fastest (1) to slowest (7) asymptotic class (constant time is fastest, super-exponential is slower).
 
 **Functions:**
 
